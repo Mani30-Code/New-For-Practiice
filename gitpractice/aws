@@ -1,0 +1,35 @@
+AWS is the market leader and pioneer of the cloud computing industry.
+Launched in 2006, it offers the most extensive and mature global infrastructure.
+Its service portfolio is vast, covering compute, storage, database, and analytics.
+Key compute services include EC2 (Elastic Compute Cloud) and Lambda for serverless.
+Elastic Beanstalk provides a platform for easy application deployment and scaling.
+For storage, its flagship service is S3 (Simple Storage Service) for object storage.
+Elastic Block Store (EBS) offers persistent block storage for EC2 instances.
+AWS’s relational database service, RDS, supports multiple database engines.
+DynamoDB is its powerful and scalable NoSQL database offering.
+The AWS Global Infrastructure is built on Regions and Availability Zones.
+This design ensures high availability and fault tolerance for applications.
+AWS has a massive partner network and marketplace of third-party solutions.
+iiIts security model is robust, with IAM (Identity and Access Management) for control.
+AWS is known for its culture of innovation, constantly releasing new services.
+It caters to everyone from startups to large enterprises and government agencies.
+The AWS Well-Architected Framework provides best practices for building systems.
+Training and certification programs are extensive and highly recognized.
+While powerful, its vastness can lead to a steeper learning curve for beginners.
+Overall, AWS is a comprehensive and dominant force in the cloud market.
+
+Global Infrastructure & Network
+Regions & Availability Zones (AZs): AWS has the largest global footprint of any provider, with 33 geographic Regions and over 105 Availability Zones launched (as of early 2024). Each AZ is one or more discrete data centers with redundant power, networking, and connectivity. This design is the bedrock of fault-tolerant and highly available architectures.
+
+Local Zones & Wavelength: To deliver single-digit millisecond latency to end-users, AWS offers Local Zones (placing compute/storage closer to large cities) and AWS Wavelength (embedding AWS infrastructure within telecom providers' 5G networks).
+
+Global Network Backbone: AWS owns and operates a massive private global network, interconnected with a vast, resilient infrastructure. This is a key advantage for performance and security, as traffic often never traverses the public internet.
+
+Core Service Deep Dive
+Compute (Beyond EC2 & Lambda):
+
+AWS Fargate: Serverless compute for containers. You don't manage servers or clusters.
+
+AWS Outposts: delivers native AWS services, infrastructure, and operating models to virtually any data center or on-premises facility for a truly
+
+

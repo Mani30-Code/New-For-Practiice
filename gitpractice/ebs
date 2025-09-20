@@ -1,0 +1,33 @@
+What is Amazon EBS?
+Amazon Elastic Block Store (EBS) is a persistent block storage service designed for use with Amazon EC2 instances. Think of it as a virtual hard disk (HDD or SSD) for your cloud servers. It provides raw storage volumes that can be attached to EC2 instances, formatted with a file system, and used like a physical disk.
+
+Key Characteristics
+Persistence: Data persists independently of the life of an EC2 instance. If you stop or terminate the instance, the EBS volume remains, allowing you to reattach it to another instance.
+
+High Availability & Durability: EBS volumes are automatically replicated within its designated Availability Zone (AZ) to protect against component failure. This provides 99.999% availability.
+
+Elasticity: You can easily increase volume size, change volume type, or adjust performance (IOPS) on the fly without stopping your instance (for most operations).
+
+Snapshots: You can create point-in-time backups (snapshots) of your volumes. These snapshots are stored in Amazon S3, which is highly durable across multiple AZs. Snapshots are incremental (only saving the blocks that have changed since the last snapshot).
+
+EBS Volume Types
+EBS offers several volume types optimized for different use cases, balancing price and performance.
+
+Solid State Drives (SSD)
+SSD volumes are designed for transactional workloads involving frequent read/write operations with small I/O size.
+
+gp3 (General Purpose SSD): The default and recommended volume type for most workloads. Provides a baseline performance of 3,000 IOPS and 125 MB/s throughput, which can be independently scaled without provisioning larger disk sizes. Cost-effective.
+
+io2 Block Express (Provisioned IOPS SSD): Highest-performance SSD volume for business-critical, IO-intensive applications. Offers the highest durability (99.999%) and can deliver up to 256,000 IOPS and 4,000 MB/s per volume. Used for large databases (SAP HANA, Oracle) and large-scale applications.
+
+Hard Disk Drives (HDD)
+HDD volumes are designed for large, sequential workloads with high throughput.
+
+st1 (Throughput Optimized HDD): Low-cost HDD volume for frequently accessed, throughput-intensive workloads like big data, data warehouses, log processing, and ETL operations. Cannot be a boot volume.
+
+sc1 (Cold HDD): The lowest-cost HDD volume for less frequently accessed data, like cold data archives. Infrequent access scenarios. Cannot be a boot volume.
+
+Previous Generation (Still available but generally superseded)
+**gp
+
+

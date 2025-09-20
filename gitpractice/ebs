@@ -30,4 +30,10 @@ sc1 (Cold HDD): The lowest-cost HDD volume for less frequently accessed data, li
 Previous Generation (Still available but generally superseded)
 **gp
 
+Volumes: A single, virtual storage device. You create a volume in a specific AZ and can attach it to any EC2 instance in that same AZ.
 
+Attach/Detach: You can detach an EBS volume from one EC2 instance and attach it to another in the same AZ, which is useful for data migration or instance recovery.
+
+Encryption: All EBS volumes can be encrypted at rest using AWS Key Management Service (KMS). Encryption happens on the servers that host the EC2 instances, providing encryption of data-in-transit between the instance and the volume. It's seamless and has minimal performance impact.
+
+Multi-Attach: The io1 and io2 families support attaching a single Provisioned IOPS SSD volume to up to 16 Nitro-based EC2 instances in the same AZ. This enables high-performance clustered applications.
